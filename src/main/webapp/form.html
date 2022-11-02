@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <style>
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        sub {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<form name="form1" action="form_ok.jsp" method="post">
+    <fieldset style='width:60px; height:auto; margin: 10px'>
+        <legend>개인정보입력</legend>
+        아이디:<br>
+        <input type="text" id="id" name="id"><br>
+        이름:<br>
+        <input type="text" id="name" name="name"><br>
+        비밀번호:<br>
+        <input type="password" id="pwd" name="pwd" placeholder="4자 이상 입력"><br>
+        핸드폰번호:<br>
+        <input type="text" id="phone" name="phone"><br>
+        주소:<br>
+        <input type="text" id="address" name="address"><br><br>
+        성별:
+        <input type="radio" id="gender1" name="gender" value="M" checked>남
+        <input type="radio" id="gender2" name="gender" value="W">여<br><br>
+        취미:<br>
+        <input type="checkbox" id="movie" name="h1" value="1" checked>
+        영화보기<br>
+        <input type="checkbox" id="strength" name="h2" value="2">
+        헬스<br>
+        <input type="checkbox" id="sew" name="h3" value="3">
+        뜨개질<br><br>
+        전공선택:
+        <select name="major">
+            <optgroup label="자연계열">
+                <option value="전산전자공학부">전산전자공학부</option>
+                <option value="생명과학부">생명과학부</option>
+                <option value="기계제어공학부">기계제어공학부</option>
+            </optgroup>
+            <optgroup label="인문계열">
+                <option value="상담사회심리학부">상담사회심리학부</option>
+                <option value="경영경제학부">경영경제학부</option>
+                <option value="법학부">법학부</option>
+            </optgroup>
+        </select>
+        <br><br>출생년도월일:<br>
+        <input type="date" min="1990-01-01" max="2022-12-31" name="fromdate"><br><br>
+        자기소개:<br>
+        <textarea id="content" name="content" cols=30 rows=5 placeholder="자기소개 해주세요"></textarea><br>
+    </fieldset>
+    <div id="sub"><input type="submit" value="저장"><input type="reset" value="취소"></div>
+
+</form>
+
+</body>
+</html>
